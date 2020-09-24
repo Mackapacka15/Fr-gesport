@@ -24,6 +24,12 @@ namespace Fragesort
                 }
                 else
                 {
+                    int test = 0;
+                    string alternativ = "Hej";
+
+                    test = fråga(alternativ, test);
+
+                    Console.WriteLine(test);
                     Console.WriteLine("");
                     while (svar1 != "a" && svar1 != "b" && svar1 != "c" && svar1 != "minecraft" && svar1 != "tetris" && svar1 != "gtav")
                     {
@@ -110,6 +116,18 @@ namespace Fragesort
                 }
             }
         }
+        static int fråga(string alternativ, int test)
+        {
+
+            if (alternativ == "Hej")
+            {
+                test++;
+            }
+            return test;
+        }
     }
+
 }
+
+
 
